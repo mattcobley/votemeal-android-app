@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_vote"
+        android:icon="@drawable/ic_vote"
+        android:title="@string/tab_vote" />
+
+    <item
+        android:id="@+id/navigation_results"
+        android:icon="@drawable/ic_results"
+        android:title="@string/tab_results" />
+
+    <item
+        android:id="@+id/navigation_predictions"
+        android:icon="@drawable/ic_predictions"
+        android:title="@string/tab_predictions" />
+
+</menu>

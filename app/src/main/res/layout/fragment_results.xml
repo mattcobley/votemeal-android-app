@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bmtdsl.votemeal.ResultsFragment"
+    android:id="@+id/resultscontainer"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/results_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results_welcome"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <ProgressBar
+        android:id="@+id/conservativesProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:progress="0"
+        android:background="#d3d3d3"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/labour_result_text"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/labourProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:progress="0"
+        android:background="#d3d3d3"
+        android:layout_above="@+id/libdems_result_text"
+        android:layout_alignStart="@+id/conservativesProgressBar"
+        android:layout_marginBottom="26dp" />
+
+    <ProgressBar
+        android:id="@+id/libdemsProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:progress="0"
+        android:background="#d3d3d3"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/labourProgressBar" />
+
+
+    <ProgressBar
+        android:id="@+id/greenpartyProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="48dp"
+        android:progress="0"
+        android:background="#d3d3d3"
+        android:layout_below="@+id/libdemsProgressBar"
+        android:layout_alignStart="@+id/libdemsProgressBar" />
+
+    <ProgressBar
+        android:id="@+id/ukipProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="47dp"
+        android:progress="0"
+        android:background="#d3d3d3"
+        android:layout_below="@+id/greenpartyProgressBar"
+        android:layout_alignStart="@+id/greenpartyProgressBar" />
+
+
+    <TextView
+        android:id="@+id/conservatives_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/conservativesProgressBar"
+        android:layout_alignStart="@+id/conservativesProgressBar"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:id="@+id/labour_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labourProgressBar"
+        android:layout_alignStart="@+id/labourProgressBar"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:id="@+id/libdems_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/greenpartyProgressBar"
+        android:layout_alignStart="@+id/libdemsProgressBar"
+        android:layout_marginBottom="26dp" />
+
+    <TextView
+        android:id="@+id/greens_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ukipProgressBar"
+        android:layout_alignStart="@+id/greenpartyProgressBar"
+        android:layout_marginBottom="27dp" />
+
+    <TextView
+        android:id="@+id/ukip_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ukipProgressBar"
+        android:layout_alignStart="@+id/ukipProgressBar"
+        android:layout_marginBottom="29dp" />
+
+    <TextView
+        android:id="@+id/total_votes_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ukipProgressBar"
+        android:layout_below="@+id/ukipProgressBar"
+        android:layout_marginTop="34dp" />
+
+</RelativeLayout>

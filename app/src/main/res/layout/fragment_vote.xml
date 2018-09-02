@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.bmtdsl.votemeal.VoteFragment"
+        android:id="@+id/votecontainer"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/conservatives_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/holo_blue_dark"
+            android:elevation="0dp"
+            android:text="@string/party_name_conservatives"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_below="@+id/ask_to_vote"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/libdems_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/greenparty_button"
+            android:layout_below="@+id/labour_button"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_orange_light"
+            android:elevation="0dp"
+            android:text="@string/party_name_libdems"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/greenparty_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/labour_button"
+            android:layout_below="@+id/libdems_button"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_green_light"
+            android:elevation="0dp"
+            android:text="@string/party_name_green"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ukip_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/greenparty_button"
+            android:layout_below="@+id/greenparty_button"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_purple"
+            android:elevation="0dp"
+            android:text="@string/party_name_ukip"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ask_to_vote"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/ask_to_vote"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/labour_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/conservatives_button"
+            android:layout_below="@+id/conservatives_button"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/holo_red_dark"
+            android:elevation="0dp"
+            android:text="@string/party_name_labour"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</ScrollView>
